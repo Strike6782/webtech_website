@@ -1,0 +1,25 @@
+.introduction-block {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(0, 183, 255);
+  position: relative;
+  z-index: -1;
+  
+}
+
+.introduction-block div {
+  position: inherit;
+  color: black;
+  text-align: center;
+}
+
+.introduction-block h1 {
+  font-size: 36px;
+}
+
+.introduction-block p {
+  margin-top: 20px;
+}
+

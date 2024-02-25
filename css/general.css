@@ -1,0 +1,29 @@
+@keyframes hover-animation {
+    from {background-color: inherit;}
+    to {background-color: rgb(240, 240, 240);}
+}
+
+#active {
+    background-color: blue;
+    animation: none;
+}
+
+* {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+img {
+  width: 50%;
+  height: auto;
+}
+
+footer {
+    min-height: 300px;
+    background-color: rgb(26, 34, 39);
+}

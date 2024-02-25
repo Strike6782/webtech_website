@@ -1,0 +1,52 @@
+@keyframes btn-hover-animation {
+    from {
+        color: black;
+        background-color: rgb(0, 183, 255);
+    }
+    to {
+        color:white;
+        background-color: rgb(0, 134, 187);
+    }
+}
+
+.info-block {
+    display: flex;
+    min-height: 200px;
+    width: 100%;
+    flex-direction: column;
+}
+
+@media only screen and (min-width:700px){
+    .info-block{
+        flex-direction: row;
+    }  
+}
+
+.info-block div {
+    background-color: rgb(235, 235, 235);
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.info-block h3 {
+    padding: 20px;
+}
+
+.info-block p {
+    padding: 20px;
+}
+
+.info-block button {
+    background-color: rgb(0, 183, 255);
+    cursor: pointer;
+    border-style: none;
+    margin: 20px;
+    padding: 12px 8px;
+}
+
+.info-block button:hover {
+    animation-name: btn-hover-animation;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
