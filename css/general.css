@@ -14,8 +14,8 @@
     padding: 0;
 }
 
-body {
-    overflow-y: scroll;
+html {
+    height: 100%;
 }
 
 img {
@@ -26,4 +26,8 @@ img {
 footer {
     min-height: 300px;
     background-color: rgb(26, 34, 39);
+}
+
+.float-right {
+    float: right;
 }
