@@ -1,10 +1,11 @@
 .article-summary{
-  background-color: rgb(0, 183, 255);
+  background-color: #d3e0ca;
   padding: 40px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: -1;
 }
 
 .article-summary div{

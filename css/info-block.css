@@ -14,6 +14,7 @@
     min-height: 200px;
     width: 100%;
     flex-direction: column;
+    background-color: #d3e0ca;
 }
 
 @media only screen and (min-width:700px){
@@ -23,14 +24,10 @@
 }
 
 .info-block div {
-    background-color: rgb(235, 235, 235);
+    background-color: #C8FFA2;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 5px;
 }
 
 .info-block h3 {
@@ -42,7 +39,7 @@
 }
 
 .info-block button {
-    background-color: rgb(0, 183, 255);
+    background-color: #5eb4d3;
     cursor: pointer;
     border-style: none;
     margin: 20px;
