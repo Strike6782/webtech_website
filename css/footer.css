@@ -1,0 +1,26 @@
+footer {
+  min-height: fit-content;
+  background-color: rgb(26, 34, 39);   
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+footer a {
+  color: rgb(221, 221, 221);
+  text-decoration: none;
+}
+
+.float-right {
+  float: right;
+}
+
+.pbottom {
+  padding-bottom: 20px;
+}
