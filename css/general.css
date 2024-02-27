@@ -1,8 +1,3 @@
-@keyframes hover-animation {
-    from {background-color: inherit;}
-    to {background-color: rgb(240, 240, 240);}
-}
-
 #active {
     background-color: blue;
     animation: none;
@@ -14,8 +9,8 @@
     padding: 0;
 }
 
-html {
-    height: 100%;
+::-webkit-scrollbar {
+    display: none;
 }
 
 img {
@@ -24,10 +19,28 @@ img {
 }
 
 footer {
-    min-height: 300px;
-    background-color: rgb(26, 34, 39);
+    min-height: fit-content;
+    background-color: rgb(26, 34, 39);   
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+footer a {
+    color: rgb(221, 221, 221);
+    text-decoration: none;
 }
 
 .float-right {
     float: right;
+}
+
+.pbottom {
+    padding-bottom: 20px;
 }
