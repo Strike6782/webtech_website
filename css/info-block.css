@@ -1,11 +1,11 @@
 @keyframes btn-hover-animation {
     from {
-        color: black;
-        background-color: rgb(0, 183, 255);
+        color: white;
+        background-color: #414347;
     }
     to {
         color:white;
-        background-color: rgb(0, 134, 187);
+        background-color: #5c5e64;
     }
 }
 
@@ -24,7 +24,7 @@
 }
 
 .info-block div {
-    background-color: #C8FFA2;
+    background-image: linear-gradient(#ff9263, #ff8552);
     margin: 10px;
     border-radius: 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
