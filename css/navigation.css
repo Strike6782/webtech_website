@@ -2,22 +2,6 @@
     display: none;
 }
 
-.bar1 {
-    width: 40px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-    transform: translate(0, 5px) rotate(-45deg);
-}
-
-.bar2 {
-    width: 40px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-    transform: translate(0, -5px) rotate(45deg);
-}
-
 .menu-button {
     cursor: pointer;
     display: none;
@@ -30,6 +14,22 @@
     height: 5px;
     background-color: white;
     margin: 6px 0;
+}
+
+.menu-button .bar1 {
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transform: translate(0, 5px) rotate(-45deg);
+}
+
+.menu-button .bar2 {
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transform: translate(0, -5px) rotate(45deg);
 }
 
 #navigation {
