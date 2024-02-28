@@ -2,19 +2,6 @@
     display: none;
 }
 
-.menu-open {
-    display: none;
-    margin: 10px;
-    float: right;
-}
-
-.menu-open div {
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-}
-
 #navigation {
     text-decoration: none;
     box-shadow: 0px 10px 50px 10px rgba(0, 0, 0, 0.25);
@@ -23,7 +10,6 @@
 #menu {
     overflow: hidden;
     list-style: none;
-    opacity: 1;
     background-color: rgb(255, 255, 255);
 }
 
@@ -54,17 +40,13 @@
         display: inline-block;
     }
 
-    .menu-open {
-        display: block;
-    }
-    
     #navigation {
         background-color: white;
         position: fixed;
         min-height: 100%;
         top: 0;
         right: -100%;
-        width: 100%;    
+        width: 100%;
         height: 100%;    
         transition: all 1s ease;    
     }
