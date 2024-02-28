@@ -28,7 +28,7 @@
 }
 
 .info-block button {
-    background-color: #414347;
+    background-color: #5c5e64;
     cursor: pointer;
     border-style: none;
     margin: 20px;
@@ -39,5 +39,5 @@
 
 .info-block button:hover {
     color: white;
-    background-color: #5c5e64;
+    background-color: #84878f;
 }
