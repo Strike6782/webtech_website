@@ -16,7 +16,7 @@
     margin: 6px 0;
 }
 
-.bar1 {
+.menu-button .bar1 {
     width: 40px;
     height: 5px;
     background-color: black;
@@ -24,7 +24,7 @@
     transform: translate(0, 5px) rotate(-45deg);
 }
 
-.bar2 {
+.menu-button .bar2 {
     width: 40px;
     height: 5px;
     background-color: black;

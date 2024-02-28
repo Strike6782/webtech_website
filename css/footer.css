@@ -1,6 +1,7 @@
 footer {
   min-height: fit-content;
   background-color: rgb(26, 34, 39);   
+  padding: 10px;
 }
 
 footer ul {
@@ -9,6 +10,7 @@ footer ul {
 
 footer li {
   padding-left: 20px;
+  padding-bottom: 10px;
   padding-top: 10px;
 }
 
@@ -19,8 +21,4 @@ footer a {
 
 .float-right {
   float: right;
-}
-
-.pbottom {
-  padding-bottom: 20px;
 }
