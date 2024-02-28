@@ -38,7 +38,13 @@ table tr:last-child td:last-child {
     border-bottom-right-radius: 10px;
 }
 
+table tr td:first-child {
+    font-weight: bold;
+    vertical-align: text-top;
+}
+
 .char-article {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
