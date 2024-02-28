@@ -3,12 +3,11 @@
   <head>
         <!--Stylesheets-->
         <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/navigation.css">
+        <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/info-block.css">
         <link rel="stylesheet" href="css/intro-block.css"> 
         <link rel="stylesheet" href="css/footer.css"> 
-
-        <script src="menu.js"></script>
+        <link rel="stylesheet" href="css/navigation.css">
 
         <!--Meta tags-->
         <meta name="viewport" content="width=device-width, initial-scale=1" >
@@ -21,64 +20,45 @@
   </head>
 
   <body>
-    <nav id="navigation">
-        <ul id="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="summary.html">Summary</a></li>
-            <li><a href="author.html">Author</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-            <li><a href="characters.html">Characters</a></li>
-            <button class="show-button" onclick="closeMenu()">CLOSE</button>
-        </ul>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="summary.html">Summary</a>
+      <a href="author.html">Author</a>
+      <a href="reviews.html">Reviews</a>
+      <a id="active">Characters</a>
     </nav>
 
-    <button class="float-right show-button" onclick="openMenu()">OPEN</button>
-
     <article>
-        <div class="info-block">
-            <div>
-                <h3>Character 1</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-            <div>
-                <h3>Character 2</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
+      <div class="info-block">
+        <div>
+            <h3>Character 1</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
         </div>
+        <div>
+            <h3>Character 2</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </div>
     
-        <div class="info-block">
-            <div>
-                <h3>Character 3</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-            <div>
-                <h3>Character 4</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
+    <div class="info-block">
+        <div>
+            <h3>Character 3</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
         </div>
+        <div>
+            <h3>Character 4</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </div>
     </article>
 
-    </body>
-
-    <footer>
-        <article>
-            <div>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="summary.html">Summary</a></li>
-                    <li><a href="author.html">Author</a></li>
-                    <li><a href="reviews.html">Reviews</a></li>
-                    <li><a href="characters.html">Characters</a></li>
-                </ul>
-            </div>
-        </article>
-    </footer>
+  </body>
 </html>

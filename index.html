@@ -8,8 +8,6 @@
         <link rel="stylesheet" href="css/intro-block.css"> 
         <link rel="stylesheet" href="css/footer.css"> 
 
-        <script src="menu.js"></script>
-
         <!--Meta tags-->
         <meta name="viewport" content="width=device-width, initial-scale=1" >
         <meta name="keywords" content="book, fanwebsite, hunger games">
@@ -33,6 +31,20 @@
         </nav>
 
         <button class="float-right show-button" onclick="openMenu()">OPEN</button>
+        
+        <script>
+            function openMenu() 
+            {
+                document.getElementById('navigation').style.right='0%';
+                document.getElementById('menu').style.opacity='1';
+            }   
+            
+            function closeMenu() 
+            {
+                document.getElementById('navigation').style.right='-100%';
+                document.getElementById('menu').style.opacity='0';
+            }    
+        </script>
         
         <article>
             <div class="introduction-block">

@@ -3,12 +3,11 @@
   <head>
         <!--Stylesheets-->
         <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/navigation.css">
+        <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/info-block.css">
         <link rel="stylesheet" href="css/intro-block.css"> 
         <link rel="stylesheet" href="css/footer.css"> 
-
-        <script src="menu.js"></script>
+        <link rel="stylesheet" href="css/navigation.css">
 
         <!--Meta tags-->
         <meta name="viewport" content="width=device-width, initial-scale=1" >
@@ -21,18 +20,13 @@
   </head>
 
   <body>
-    <nav id="navigation">
-      <ul id="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="summary.html">Summary</a></li>
-          <li><a href="author.html">Author</a></li>
-          <li><a href="reviews.html">Reviews</a></li>
-          <li><a href="characters.html">Characters</a></li>
-          <button class="show-button" onclick="closeMenu()">CLOSE</button>
-      </ul>
-  </nav>
-
-  <button class="float-right show-button" onclick="openMenu()">OPEN</button>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="summary.html">Summary</a>
+      <a href="author.html">Author</a>
+      <a id="active">Reviews</a>
+      <a href="characters.html">Characters</a>
+    </nav>
 
     <article>
       <div class="info-block">
@@ -67,18 +61,4 @@
     </article>
 
   </body>
-
-  <footer>
-    <article>
-        <div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="summary.html">Summary</a></li>
-                <li><a href="author.html">Author</a></li>
-                <li><a href="reviews.html">Reviews</a></li>
-                <li><a href="characters.html">Characters</a></li>
-            </ul>
-        </div>
-    </article>
-</footer>
 </html>
