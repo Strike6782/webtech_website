@@ -69,5 +69,6 @@
         list-style: none;
         background-color: white;
         transition: all 1s ease;
+        color: blue;
     }
 }
