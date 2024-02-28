@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="css/intro-block.css"> 
         <link rel="stylesheet" href="css/footer.css"> 
 
+        <script src="menu.js"></script>
+
         <!--Meta tags-->
         <meta name="viewport" content="width=device-width, initial-scale=1" >
         <meta name="keywords" content="book, fanwebsite, hunger games">
@@ -21,39 +23,31 @@
     <body>
         <nav id="navigation">
             <ul id="menu">
+                <div class="menu-button" onclick="closeMenu()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                </div>
+                <div class="close-menu"></div>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="summary.html">Summary</a></li>
                 <li><a href="author.html">Author</a></li>
                 <li><a href="reviews.html">Reviews</a></li>
                 <li><a href="characters.html">Characters</a></li>
-                <button class="show-button" onclick="closeMenu()">CLOSE</button>
             </ul>
         </nav>
 
-        <button class="float-right show-button" onclick="openMenu()">OPEN</button>
-        
-        <script>
-            function openMenu() 
-            {
-                document.getElementById('navigation').style.right='0%';
-                document.getElementById('menu').style.opacity='1';
-            }   
-            
-            function closeMenu() 
-            {
-                document.getElementById('navigation').style.right='-100%';
-                document.getElementById('menu').style.opacity='0';
-            }    
-        </script>
-        
+        <div class="menu-button" onclick="openMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
         <article>
-            <div class="bgimg">
-                <div class="introduction-block" >
-                    <div>
-                        <h1>The biggest fan-website of the book The Hunger Games!</h1>
-                        <p>We are enormous lovers of this fantastic, epic, gorgeous book called The Hunger Games. <br>
-                        On this website you can find everything about this masterpiece, from information of the author to the summary</p>
-                    </div>
+            <div class="introduction-block">
+                <div>
+                    <h1>The biggest fan-website of the book Hunger Games!</h1>
+                    <p>We are enormous lovers of this fantastic epic gorgeous book called Hunger Games <br>
+                    on this website you can find everything about this masterpiece, from information of the author to the summary</p>
                 </div>
             </div>
         </article>

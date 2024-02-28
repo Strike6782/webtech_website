@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="css/footer.css"> 
         <link rel="stylesheet" href="css/navigation.css">
 
+        <script src="menu.js"></script>
+
         <!--Meta tags-->
         <meta name="viewport" content="width=device-width, initial-scale=1" >
         <meta name="keywords" content="book, fanwebsite, hunger games">
@@ -22,13 +24,26 @@
 
 
     <body>
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a id="active">Summary</a>
-            <a href="author.html">Author</a>
-            <a href="reviews.html">Reviews</a>
-            <a href="characters.html">Characters</a>
+        <nav id="navigation">
+            <ul id="menu">
+                <div class="menu-button" onclick="closeMenu()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                </div>
+                <div class="close-menu"></div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="summary.html">Summary</a></li>
+                <li><a href="author.html">Author</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="characters.html">Characters</a></li>
+            </ul>
         </nav>
+
+        <div class="menu-button" onclick="openMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
 
         <article class="article-summary">
           <h1>Summary</h1>
@@ -39,6 +54,16 @@
   
   
       <footer>
-          <p>this is the footer</p>
-      </footer>
+        <article>
+            <div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="summary.html">Summary</a></li>
+                    <li><a href="author.html">Author</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="characters.html">Characters</a></li>
+                </ul>
+            </div>
+        </article>
+    </footer>
   </html>

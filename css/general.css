@@ -13,12 +13,6 @@
     display: none;
 }
 
-.bgimg {
-    background-image: url("../images/HGBanner.webp");
-    background-size: cover;
-    background-position: center;
-}
-
 body {
     background-color: #afafaf;
 }
