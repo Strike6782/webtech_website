@@ -2,6 +2,7 @@
   padding: 40px;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: -1;
@@ -13,4 +14,9 @@
 
 .article-summary h1{
   margin: 20px;
+}
+
+.article-summary p{
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
