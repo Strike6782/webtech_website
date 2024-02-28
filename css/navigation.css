@@ -2,6 +2,20 @@
     display: none;
 }
 
+.menu-button {
+    cursor: pointer;
+    display: none;
+    float: right;
+    margin: 20px;
+}
+
+.menu-button div {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
 .bar1 {
     width: 40px;
     height: 5px;
@@ -16,20 +30,6 @@
     background-color: black;
     margin: 6px 0;
     transform: translate(0, -5px) rotate(45deg);
-}
-
-.menu-button {
-    cursor: pointer;
-    display: none;
-    float: right;
-    margin: 20px;
-}
-
-.menu-button div {
-    width: 35px;
-    height: 5px;
-    background-color: white;
-    margin: 6px 0;
 }
 
 #navigation {
