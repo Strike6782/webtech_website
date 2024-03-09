@@ -20,3 +20,19 @@ img {
 .pbottom{
     padding-bottom: 15px;
 }
+
+.link-as-button {
+    background-color: #5c5e64;
+    cursor: pointer;
+    border-style: none;
+    margin: 20px;
+    padding: 12px 8px;
+    transition: all 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+
+.link-as-button:hover {
+    color: white;
+    background-color: #84878f;
+}
