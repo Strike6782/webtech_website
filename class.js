@@ -6,6 +6,25 @@ class CreativeWork
         this.year = year;
         this.title = title;
     }
+    get year(){
+        return this.year;
+    }
+    set year(value){
+        this.year = value;
+    }
+    get authors(){
+        return this.authors;
+    }
+    set authors(value){
+        this.authors = value;
+    }
+    get title(){
+        return this.title;
+    }
+    set title(value){
+        this.title = value;
+    }
+    
 }
 
 class Book extends CreativeWork
