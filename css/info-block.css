@@ -13,7 +13,7 @@
 }
 
 .info-block div {
-    background-image: linear-gradient(#ff9263, #ff8552);
+    background-color: #ff9263;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);

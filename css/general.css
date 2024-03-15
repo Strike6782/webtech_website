@@ -36,3 +36,9 @@ img {
     color: white;
     background-color: #84878f;
 }
+
+.customize {
+    display: block;
+    align-items: center;
+    padding: 20px;
+}
