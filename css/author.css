@@ -6,10 +6,15 @@
 
 #popup-box{
   display: none;
-  background-color: aqua;
+  background-image: linear-gradient(#ff9263, #ff8552);
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  z-index: 50;
+  margin: 10px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.img-with-popup{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
