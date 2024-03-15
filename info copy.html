@@ -21,7 +21,7 @@
     <title>Hunger games fan-website</title>
     <link rel="icon" type="image/x-icon" href="images/bookicon.jpeg">
   </head>
-  <body>
+  <body id="body">
     <nav id="navigation">
       <ul id="menu">
         <div class="menu-button" onclick="closeMenu()">
@@ -39,27 +39,24 @@
 
     <script src="createMenuElements.js"></script>
 
+    <script src="info.js"></script>
+
+  </body>
+
+  <footer>
     <div class="customize">
       <select id="elementSelector">
-        <option value="paragraph" selected="selected">paragraph</option>
-        <option value="header">header</option>
-        <option value="textbox">textbox</option>
-        <option value="title">title</option>
-        <option value="navigation">navigation</option>
-        <option value="bodybackground">body background</option>
+
       </select>
 
       <input type="color" id="colorpicker">
       <label>Select color</label>
     </div>
 
-    <script src="info.js"></script>
+    <script src="createElementSelector.js"></script>
     <script src="colorpicker.js"></script>
 
-  </body>
-
-  <footer>
-    <ul>
+    <ul> 
         <li><a href="index.html">Home</a></li>
         <li><a href="summary.html">Summary</a></li>
         <li><a href="author.html">Author</a></li>

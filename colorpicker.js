@@ -17,30 +17,7 @@ function watchColorPicker(event) {
         });
     }
 
-    switch(elementSelector.value) {
-        case('paragraph'):
-            targetElements = document.querySelectorAll(".info-block div p");
-            changeColor(targetElements);
-            break;
-        case('header'):
-            targetElements = document.querySelectorAll(".info-block div h3");
-            changeColor(targetElements);
-            break;
-        case('navigation'):
-            targetElements = document.querySelectorAll("#navigation ul li a");
-            changeColor(targetElements);
-            break;
-        case('title'):
-            targetElements = document.querySelectorAll(".introduction-block div h1, .introduction-block div p");
-            changeColor(targetElements);
-            break;
-        case('textbox'):
-            targetElements = document.querySelectorAll(".info-block div");
-            changeBackground(targetElements);
-            break;
-        case('bodybackground'):
-            targetElements = document.querySelectorAll("body");
-            changeBackground(targetElements);
-            break;
-    }
+    targetElements = document.querySelectorAll("#" + elementSelector.value);
+    changeColor(targetElements);
+    console.log(elementSelector.value);
 }

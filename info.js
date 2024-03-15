@@ -1,10 +1,10 @@
 
-function createInfoBlock(id){
-  //add info blocks to article
-  let infoBlock = document.createElement("div");
-  infoBlock.className = "info-block";
-  infoBlock.id = id;
-  article1.appendChild(infoBlock);
+function createArticle(id) {
+  let body = document.getElementById("body");
+  let article = document.createElement("article");
+  body.appendChild(article);
+  article.id = id;
+  article.className = "info-block";
 }
 
 function createDivInfoBlock(blockToAttach, title, desc, btn) {
@@ -12,7 +12,7 @@ function createDivInfoBlock(blockToAttach, title, desc, btn) {
   let target = document.getElementById(blockToAttach);
 
   //add the div
-  let divInfoBlock = document.createElement("div");
+  let divInfoBlock = document.createElement("section");
   target.appendChild(divInfoBlock);
 
   //add things inside that div
@@ -56,14 +56,6 @@ function createIntroductionBlock(target, text) {
   article.appendChild(introBlock);
 }
 
-createIntroductionBlock("article1", book.title)
-
-createInfoBlock("block0");
-createInfoBlock("block1");
-createInfoBlock("block2");
-
-createDivInfoBlock("block0", "The plot", book.plot);
-createDivInfoBlock("block1", "Publisher", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam molestie iaculis felis non rhoncus. Sed vehicula, ante nec facilisis fermentum, massa ante elementum ante, a viverra metus nunc eu ligula. Nunc sed nunc non quam convallis vestibulum nec sit amet purus. Suspendisse convallis nunc vitae pretium efficitur. Suspendisse a quam neque. Donec dignissim magna ipsum, ac feugiat nibh condimentum ut. Donec vel ex congue, fermentum quam id, bibendum lacus. Morbi vel aliquet est. Quisque nulla augue, tristique at rhoncus sit amet, interdum eu arcu.");
-createDivInfoBlock("block1", "Lorem ipsum", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam molestie iaculis felis non rhoncus. Sed vehicula, ante nec facilisis fermentum, massa ante elementum ante, a viverra metus nunc eu ligula. Nunc sed nunc non quam convallis vestibulum nec sit amet purus. Suspendisse convallis nunc vitae pretium efficitur. Suspendisse a quam neque. Donec dignissim magna ipsum, ac feugiat nibh condimentum ut. Donec vel ex congue, fermentum quam id, bibendum lacus. Morbi vel aliquet est. Quisque nulla augue, tristique at rhoncus sit amet, interdum eu arcu.");
-createDivInfoBlock("block2", "Lorem ipsum", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam molestie iaculis felis non rhoncus. Sed vehicula, ante nec facilisis fermentum, massa ante elementum ante, a viverra metus nunc eu ligula. Nunc sed nunc non quam convallis vestibulum nec sit amet purus. Suspendisse convallis nunc vitae pretium efficitur. Suspendisse a quam neque. Donec dignissim magna ipsum, ac feugiat nibh condimentum ut. Donec vel ex congue, fermentum quam id, bibendum lacus. Morbi vel aliquet est. Quisque nulla augue, tristique at rhoncus sit amet, interdum eu arcu.");
-
+createArticle("article0");
+createArticle("article1");
+createDivInfoBlock("article0", "TEST", "YOOo");
