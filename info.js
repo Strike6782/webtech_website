@@ -79,8 +79,8 @@ function createBookBlock(target, Book, Author, Publisher) {
   article.appendChild(introBlock);
 }
 
-HGAuthor = new Author("Suzanne Collins", "1962", "The Hunger Games", "link")
-HGPublisher = new Publisher("Scholastic", "link", "The Hunger Games")
+HGAuthor = new Author("Suzanne Collins", "1962", "The Hunger Games", "https://nl.wikipedia.org/wiki/Suzanne_Collins")
+HGPublisher = new Publisher("Scholastic", "https://export.scholastic.com/en", "The Hunger Games")
 HGBook = new Book(HGAuthor, 2008, "The Hunger Games", "Sciencefiction", HGPublisher, "img", 
 "Panem is a dystopian nation divided into twelve districts, ruled by the Capitol. As punishment for a failed rebellion many years before, each district must annually choose two tributes, one boy and one girl between the ages of twelve and eighteen, to fight to the death in the annual Hunger Games, until one victor remains. The event is televised across the Capitol and all districts, who are forced to watch.");
 
