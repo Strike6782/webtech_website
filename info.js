@@ -55,7 +55,7 @@ book.plot = "Panem is a dystopian nation divided into twelve districts, ruled by
 //   article.appendChild(introBlock);
 // }
 
-function createBookBlock(target, Book) {
+function createBookBlock(target, Book, Author, Publisher) {
   let article = document.getElementById(target);
   let introBlock = document.createElement("div");
   let div = document.createElement("div");
@@ -72,8 +72,8 @@ function createBookBlock(target, Book) {
 
   createP("Genre: " + Book.genre);
   createP("Year: " + Book.year);
-  createP("Author: " + Book.Author);
-  createP("Publisher: " + Book.genre);
+  createP("Author: " + Author.name);
+  createP("Publisher: " + Publisher.name);
   createP("Plot: " + Book.plot);
   introBlock.appendChild(div);
   article.appendChild(introBlock);
@@ -87,4 +87,4 @@ HGBook = new Book(HGAuthor, 2008, "The Hunger Games", "Sciencefiction", HGPublis
 createArticle("article0");
 //createArticle("article1");
 // createDivInfoBlock("article0", "TEST", "YOOo");
-createBookBlock("article0", HGBook);
+createBookBlock("article0", HGBook, HGAuthor, HGPublisher);
