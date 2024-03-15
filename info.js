@@ -60,6 +60,8 @@ function createBookBlock(target, Book, Author, Publisher) {
   let introBlock = document.createElement("div");
   let div = document.createElement("div");
   let h1 = document.createElement("h1");
+  let image = document.createElement("img");
+  image.src = Book.cover;
 
   function createP(text) {
     let p = document.createElement("p");
@@ -77,11 +79,12 @@ function createBookBlock(target, Book, Author, Publisher) {
   createP("Plot: " + Book.plot);
   introBlock.appendChild(div);
   article.appendChild(introBlock);
+  article.appendChild(image);
 }
 
 HGAuthor = new Author("Suzanne Collins", "1962", "The Hunger Games", "https://nl.wikipedia.org/wiki/Suzanne_Collins")
 HGPublisher = new Publisher("Scholastic", "https://export.scholastic.com/en", "The Hunger Games")
-HGBook = new Book(HGAuthor, 2008, "The Hunger Games", "Sciencefiction", HGPublisher, "img", 
+HGBook = new Book(HGAuthor, 2008, "The Hunger Games", "Sciencefiction", HGPublisher, "https://upload.wikimedia.org/wikipedia/en/3/39/The_Hunger_Games_cover.jpg", 
 "Panem is a dystopian nation divided into twelve districts, ruled by the Capitol. As punishment for a failed rebellion many years before, each district must annually choose two tributes, one boy and one girl between the ages of twelve and eighteen, to fight to the death in the annual Hunger Games, until one victor remains. The event is televised across the Capitol and all districts, who are forced to watch.");
 
 createArticle("article0");
