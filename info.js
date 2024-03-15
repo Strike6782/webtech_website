@@ -60,16 +60,21 @@ function createBookBlock(target, Book) {
   let introBlock = document.createElement("div");
   let div = document.createElement("div");
   let h1 = document.createElement("h1");
-  let p = document.createElement("p");
 
+  function createP(text) {
+    let p = document.createElement("p");
+    p.appendChild(document.createTextNode(text));
+    div.appendChild(p);
+  }
+  
   h1.appendChild(document.createTextNode(Book.title));
-  p.appendChild(document.createTextNode("Genre: " + Book.genre));
-  p.appendChild(document.createTextNode("Year: " + Book.year));
-  p.appendChild(document.createTextNode("Author: " + Book.Author));
-  p.appendChild(document.createTextNode("Publisher: " + Book.genre));
-  p.appendChild(document.createTextNode("Plot: " + Book.plot));
   div.appendChild(h1);
-  div.appendChild(p);
+
+  createP("Genre: " + Book.genre);
+  createP("Year: " + Book.year);
+  createP("Author: " + Book.Author);
+  createP("Publisher: " + Book.genre);
+  createP("Plot: " + Book.plot);
   introBlock.appendChild(div);
   article.appendChild(introBlock);
 }
