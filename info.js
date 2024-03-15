@@ -39,6 +39,7 @@ book.author = "writer";
 book.year = "1900"
 book.plot = "Panem is a dystopian nation divided into twelve districts, ruled by the Capitol. As punishment for a failed rebellion many years before, each district must annually choose two tributes, one boy and one girl between the ages of twelve and eighteen, to fight to the death in the annual Hunger Games, until one victor remains. The event is televised across the Capitol and all districts, who are forced to watch.";
 
+<<<<<<< Updated upstream
 // function createIntroductionBlock(target, text) {
 //   let article = document.getElementById(target);
 //   let introBlock = document.createElement("div");
@@ -56,6 +57,9 @@ book.plot = "Panem is a dystopian nation divided into twelve districts, ruled by
 // }
 
 function createBookBlock(target, Book) {
+=======
+function createIntroductionBlock(target, title) {
+>>>>>>> Stashed changes
   let article = document.getElementById(target);
   let introBlock = document.createElement("div");
   let div = document.createElement("div");
@@ -80,6 +84,10 @@ HGBook = new Book(HGAuthor, 2008, "The Hunger Games", "Sciencefiction", HGPublis
 "Panem is a dystopian nation divided into twelve districts, ruled by the Capitol. As punishment for a failed rebellion many years before, each district must annually choose two tributes, one boy and one girl between the ages of twelve and eighteen, to fight to the death in the annual Hunger Games, until one victor remains. The event is televised across the Capitol and all districts, who are forced to watch.");
 
 createArticle("article0");
+<<<<<<< Updated upstream
 //createArticle("article1");
 // createDivInfoBlock("article0", "TEST", "YOOo");
 createBookBlock("article0", HGBook);
+=======
+createDivInfoBlock("article0", "TEST", "YOOo");
+>>>>>>> Stashed changes
