@@ -1,8 +1,21 @@
 class CreativeWork
-{
-    constructor(authors, year, title)
+{   
+    #author;
+    #year;
+    #title;
+
+    get author() { return this.#author; }
+    set author(x) { this.#author = x; }
+
+    get year() { return this.#year; }
+    set year(x) { this.#year = x; }
+
+    get title() { return this.#title; }
+    set title(x) { this.#title = x; }
+
+    constructor(author, year, title)
     {
-        this.authors = authors;
+        this.author = author;
         this.year = year;
         this.title = title;
     }
@@ -10,9 +23,10 @@ class CreativeWork
 
 class Book extends CreativeWork
 {
-    constructor(authors, year, title, genre, publisher, cover, plot)
+
+    constructor(author, year, title, genre, publisher, cover, plot)
     {
-        super(authors, year, title);
+        super(author, year, title);
         this.genre = genre;
         this.publisher = publisher;
         this.cover = cover;
@@ -38,7 +52,8 @@ class Author extends Person
     }
 }
 
-class Company {
+class Company 
+{
     constructor(name, wikipedia)
     {
         this.name = name;
