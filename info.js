@@ -66,13 +66,23 @@ function createBookBlock(target, Book, Author, Publisher) {
     p.appendChild(document.createTextNode(text));
     div.appendChild(p);
   }
+  function createAuthor(text) {
+    let p = document.createElement("p");
+    p.appendChild(document.createTextNode(text));
+    div.appendChild(p);
+    p.id = "author-id"
+    let popup = document.createElement("div");
+    p.appendChild(popup);
+    popup.id = "popup-box-info";
+    popup.appendChild(document.createTextNode("This is a popup box for the author"))
+  }
   
   h1.appendChild(document.createTextNode(Book.title));
   div.appendChild(h1);
 
   createP("Genre: " + Book.genre);
   createP("Year: " + Book.year);
-  createP("Author: " + Author.name);
+  createAuthor("Author: " + Author.name);
   createP("Publisher: " + Publisher.name);
   createP("Plot: " + Book.plot);
   introBlock.appendChild(div);

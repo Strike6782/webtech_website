@@ -41,3 +41,12 @@ img {
     display: block;
     padding: 20px;
 }
+
+#popup-box-info{
+    display: none;
+    background-image: linear-gradient(#ff9263, #ff8552);
+    position: relative;
+    margin: 10px;
+    width: fit-content;
+    height: fit-content;
+  }
