@@ -17,3 +17,4 @@ createNavigationItem("Author", "author.html");
 createNavigationItem("Reviews", "reviews.html");
 createNavigationItem("Characters", "characters.html");
 createNavigationItem("Info", "info.html");
+createNavigationItem("InfoCopy", "info copy.html");

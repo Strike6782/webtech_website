@@ -44,10 +44,11 @@ class Person
 
 class Author extends Person 
 {
-    constructor(name, year, titles)
+    constructor(name, year, titles, wikipedia)
     {
         super(name, year);
         this.titles = titles;
+        this.wikipedia = wikipedia;
     }
 }
 
