@@ -1,23 +1,21 @@
 //get excisting elements
 let article1 = document.getElementById("article1");
 
-
-
-function createInfoBlock(title1, title2, desc1, desc2, btn1, btn2){
+function createInfoBlock(id){
   //add info blocks to article
   let infoBlock = document.createElement("div");
   infoBlock.className = "info-block";
+  infoBlock.id = id;
   article1.appendChild(infoBlock);
-
-    //create two divs inside this info block
-  createDivInfoBlock(infoBlock, title1, desc1, btn1);
-  createDivInfoBlock(infoBlock, title2, desc2, btn2);
 }
 
-function createDivInfoBlock(blockToAttach, title, desc, btn){
+function createDivInfoBlock(blockToAttach, title, desc, btn) {
+  //target the correct InfoBlock
+  let target = document.getElementById(blockToAttach);
+
   //add the div
   let divInfoBlock = document.createElement("div");
-  blockToAttach.appendChild(divInfoBlock);
+  target.appendChild(divInfoBlock);
 
   //add things inside that div
   let h2InfoBlock = document.createElement("h3");
@@ -33,5 +31,8 @@ function createDivInfoBlock(blockToAttach, title, desc, btn){
   btnInfoBlock.textContent = btn;
 }
 
-createInfoBlock("titel 1", "titel 2", "beschrijving 1", "beschrijving 2", "knopie 1", "knoppie 2");
-
+createInfoBlock("target0");
+createInfoBlock("target1");
+createDivInfoBlock("target1", "Hello!", "I got created first!", "click me");
+createDivInfoBlock("target1", "Hello!", "I got created second!", "click me");
+createDivInfoBlock("target0", "Hello!", "I got created third!", "click me");
